@@ -1,5 +1,5 @@
 #my age
-age = 25
+# age = 25
 
 #when am i born
 # print(2020 -age)
@@ -47,10 +47,53 @@ def score75(total, correct, wrong):
 
 
 
-print(score75(20,20,0))
-print(score75(20,15,0))
-print(score75(20,15,5))
-print(score75(20,10,5))
-print(score75(20,0,20))
+# print(score75(20,20,0))
+# print(score75(20,15,0))
+# print(score75(20,15,5))
+# print(score75(20,10,5))
+# print(score75(20,0,20))
 
-#control flow
+#CONTROL FLOW IF ELSE STATEMENTS AND WHILE LOOPS
+#else if() in python is 'elif' fucking gross
+def can_watch_movies(age, with_parents):
+    if age >= 17 or with_parents:
+        return True
+    else:
+        return False
+
+#while loop
+# def eat_apples(num__of_apples, on_diet):
+#     apples_remaining = num__of_apples
+#     while apples_remaining > 0 and not on_diet:
+#         apples_remaining -= 1
+#         print('Thank you!')
+#     print('Done')
+#     return
+
+# print(eat_apples(5, False))
+
+#CONTROL FLOW PROBLEM 1: FIZZBUZZ
+#write a pythong function with iterates the integers from 0 to n. For multiples of 3 print 'fizz' isntead of the number, and for the multiples of five, print 'buzz'. For numbers which are multiple of both three and five, print 'fizzbuzz'
+def fizzbuzz(n):
+    i = 1
+    while i <= n:
+        if i%3 == 0 & i%5 == 0:
+            print('fizzbuzz')
+        elif i%3 == 0:
+            print ('fizz')
+        elif i%5 == 0:
+            print('buzz')
+        else: 
+            print(i)
+        i+= 1
+fizzbuzz(15)
+
+
+
+#CONTROL FLOW PROBLEM 2: Multiply Without *
+#Write a python function which multiplies two values (a and b) without using the multiplication symbol. Use addition and a while loop to write your function
+
+#CONTROL FLOW PROBLEM 3: Output the first n prime numbers
+#Write a python function that outputs the first n prime numbers
+
+

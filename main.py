@@ -74,19 +74,19 @@ def can_watch_movies(age, with_parents):
 
 #CONTROL FLOW PROBLEM 1: FIZZBUZZ
 #write a pythong function with iterates the integers from 0 to n. For multiples of 3 print 'fizz' isntead of the number, and for the multiples of five, print 'buzz'. For numbers which are multiple of both three and five, print 'fizzbuzz'
-def fizzbuzz(n):
-    i = 1
-    while i <= n:
-        if i%3 == 0 & i%5 == 0:
-            print('fizzbuzz')
-        elif i%3 == 0:
-            print ('fizz')
-        elif i%5 == 0:
-            print('buzz')
-        else: 
-            print(i)
-        i+= 1
-fizzbuzz(15)
+# def fizzbuzz(n):
+#     i = 1
+#     while i <= n:
+#         if i%3 == 0 & i%5 == 0:
+#             # print('fizzbuzz')
+#         elif i%3 == 0:
+#             # print ('fizz')
+#         elif i%5 == 0:
+#             # print('buzz')
+#         else: 
+#             # print(i)
+#         i+= 1
+# fizzbuzz(15)
 
 
 
@@ -95,5 +95,59 @@ fizzbuzz(15)
 
 #CONTROL FLOW PROBLEM 3: Output the first n prime numbers
 #Write a python function that outputs the first n prime numbers
+#prime numbers are > 1 and can only be divided by 1 and itself
+# def prime_numbers(n):
+#     i = 0
+#     x= []
+#     while len(x) < n:
+#         if i > 1 and not n % i == 0:
+#             x.append(i)
+#         i += 1
+#         print(x);
+
+# prime_numbers(5)
+# prime_numbers(7)
 
 
+#lists what are they(it's a fucking array)
+nums = [2,5,14,17,20,35]
+# print(nums[3])
+nums [1:4] = [5,14,17] # this gives us a range
+
+
+#LISTS PROBLEM 1: GENERATE LIST OF NUMBERS
+# Write a python function that generates a list of numbers that starts at start and stops before end and incremnets by step 
+def generate_list(start, end ,step):
+    x = []
+    i = start
+    if step > 0:
+        while i < end:
+            x.append(i)
+            i += step
+        print(x)
+        print(step)
+    else:
+        while i > end:
+            x.append(i)
+            i += step
+        print(x)
+    return x
+
+# generate_list(0,5,1)
+# [0,1,2,3,4] 
+# generate_list(0,0,1) 
+# []
+# generate_list(5,10,2) 
+# [5,7,9]
+generate_list(10,5,-2) 
+# [10,8,6]
+
+# LIST PROBLEM 2 : REVERSE THE LIST 
+# Write a python function which reverse a list 
+# note: try doing it without list.reverse(), instead try to do it with a while loops
+# def reverse_list(mylist):
+
+# reverse_list([1,2,3,4,5])
+# [5,4,3,2,1]
+# reverse_list([])
+# []

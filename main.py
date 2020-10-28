@@ -139,15 +139,25 @@ def generate_list(start, end ,step):
 # []
 # generate_list(5,10,2) 
 # [5,7,9]
-generate_list(10,5,-2) 
+# generate_list(10,5,-2) 
 # [10,8,6]
 
 # LIST PROBLEM 2 : REVERSE THE LIST 
 # Write a python function which reverse a list 
 # note: try doing it without list.reverse(), instead try to do it with a while loops
-# def reverse_list(mylist):
+def reverse_list(mylist):
+    #while the length of the array is great than 0, remove the last element and place it into a new array
+    new_array = [];
+    length = len(mylist) - 1
 
-# reverse_list([1,2,3,4,5])
+    while length >= 0:
+        new_array.append(mylist[length])
+        length -= 1
+    
+    print(new_array)
+    return new_array
+
+reverse_list([1,2,3,4,5])
 # [5,4,3,2,1]
 # reverse_list([])
 # []

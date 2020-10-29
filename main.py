@@ -199,3 +199,11 @@ def intersection(lst1, lst2):
 # []
 # intersection([2,3,2,4],[2,2,4,1,5,3])
 # [2,4]
+
+#matrix
+vector = [2,3,4,5] #its a bunch of numbers bunched together. this is a 4 dimenisonal vector
+
+matrix = [[1,2,3],
+          [4,5,6],
+          [7,8,9]] # a matrix is a retangular array. this is a 3x3 matrix
+

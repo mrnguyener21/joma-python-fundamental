@@ -185,4 +185,17 @@ def is_in_list(n, list):
 #LOOPS PROBLEM 2 : INTERSECTION OF LISTS
 #Write a function intersection that consumes two lists of numbers and porduces the list of numbers that are in both lists
 #AKA ARE THERE ANY NUMBERS IN BOTH LISTS
-
+def intersection(lst1, lst2):
+    answer = []
+    for i in lst1:
+        for j in lst2:
+            if j not in answer and i == j:
+                answer.append(i)
+                break
+    return answer
+# intersection([1,2,3], [2,4,6])
+# [2]
+# intersection([1,2,3], [4,5,6])
+# []
+# intersection([2,3,2,4],[2,2,4,1,5,3])
+# [2,4]

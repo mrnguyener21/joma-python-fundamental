@@ -157,7 +157,32 @@ def reverse_list(mylist):
     print(new_array)
     return new_array
 
-reverse_list([1,2,3,4,5])
+# reverse_list([1,2,3,4,5])
 # [5,4,3,2,1]
 # reverse_list([])
 # []
+
+#LOOPS PROBLEM 1 : Is number in list?
+# Write a function that checks if a numnber 'n' is in a list 'lst'
+def is_in_list(n, list):
+    # loop through the list
+    # if list contains 'n' answer  = True else answer = False. I should probably break if n is found
+    answer = False
+    for i in list:
+        if i == n:
+            answer = True
+            break
+
+    print (answer)
+    return answer
+        
+
+# is_in_list(5,[1,2,3,4])
+#False
+# is_in_list(5,[1,5,6])
+#True
+
+#LOOPS PROBLEM 2 : INTERSECTION OF LISTS
+#Write a function intersection that consumes two lists of numbers and porduces the list of numbers that are in both lists
+#AKA ARE THERE ANY NUMBERS IN BOTH LISTS
+

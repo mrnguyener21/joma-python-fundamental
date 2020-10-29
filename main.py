@@ -207,3 +207,33 @@ matrix = [[1,2,3],
           [4,5,6],
           [7,8,9]] # a matrix is a retangular array. this is a 3x3 matrix
 
+#MATRIX PROBLEM 1 : IS IT A VALID MATRIX?
+#Write a function that determines if the given list of lists is valid, meaning that for each row, it has the same number of columns
+def is_valid_matrix(matrix):
+    answer = ''
+    
+    if len(matrix[0]) == len(matrix[1]) and len(matrix[0]) == len(matrix[2]) and len(matrix[1]) == len(matrix[2]):
+        answer = True
+    else: 
+        answer = False
+
+    print (answer)
+    return answer
+
+is_valid_matrix([[1,2,3],[4,5,6],[7,8,9]])
+#True
+is_valid_matrix([[1,2,3],[4,5],[7,8,9]])
+#False
+
+
+#MATRIX PROBLEM  : MATRIX MULTIPLICATION
+#Write a function that multiplies two matrices together. For matrix multiplication, the number of columns in the first matrix must be equal to the number of rows in the second matrix. The result matrix, known as the matrix product, has the number of rows of the first and the number of columns of the second matrix. 
+
+#There is a formal definition of matrix multiplication on wikipedia. https://en.wikipedia.org/wiki/Matrix_multiplication
+#Output "None" if the matrices cannot be multiplied together. Use the previous function is_valid_matrix to validate the two matrices 
+# before you multiply them 
+
+# def matrix_multiply(m,n):
+#     # m is the first matrix and n is the second matrix
+
+#     return 

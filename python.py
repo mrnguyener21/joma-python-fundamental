@@ -297,9 +297,11 @@ def is_increasing(lst):
 #Regression Problem 2: NUmbers Greater Than n
 # Given a list, output a new list that only retains the numbers from the list that is greater than n
 def filter_gt_n(lst, n):
-
-    return
-
+    #what is the base formula
+    answer = []
+    if len(lst) == 0:
+        return answer
+    elif lst[0]
 print(filter_gt_n([1,2,3,4],2))
 # [3,4] (2 is not included because it is not greater than 2)
 print(filter_gt_n([2,2,3,3],1))
